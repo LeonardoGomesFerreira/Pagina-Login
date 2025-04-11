@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Consultório Odontológico</title>
+    <link rel="stylesheet" href="PageLogin.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="login-header">
+            <header>Login</header>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" id="username" placeholder="Usuário" autocomplete="off" required>
+            <div class="validation-message empty-message" id="usernameEmpty">
+                Campo obrigatório
+            </div>
+            <div class="validation-message error-message" id="usernameError">
+                Usuário inválido
+            </div>
+            <div class="validation-message success-message" id="usernameSuccess">
+                Usuário válido
+            </div>
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" id="password" placeholder="Senha" autocomplete="off" required>
+            <div class="validation-message empty-message" id="passwordEmpty">
+                Campo obrigatório
+            </div>
+            <div class="validation-message error-message" id="passwordError">
+                Senha inválida
+            </div>
+            <div class="validation-message success-message" id="passwordSuccess">
+                Senha válida
+            </div>
+        </div>
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check">Lembre-me</label>
+            </section>
+            <section>
+                <a href="#">Esqueceu a senha?</a>
+            </section>
+        </div>
+        <div class="input-submit">
+            <button class="submit-btn" id="submit"></button>
+            <label for="submit">Login</label>
+        </div>
+    </div>
+
+    <script src="PageLogin.js"></script>
+</body>
+
+</html>
